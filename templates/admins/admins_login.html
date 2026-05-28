@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="\static\admins\admins_login\assets\">
+<title>Glassy Login Form A Responsive Widget Template :: w3layouts</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Glassy Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Meta tag Keywords -->
+<!-- css files -->
+<link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body>
+   <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+		<!--header-->
+		<div class="header-w3l">
+			<br><br><br><br><br>
+		</div>
+		<!--//header-->
+		<!--main-->
+		<div class="main-w3layouts-agileinfo">
+	           <!--form-stars-here-->
+						<div class="wthree-form">
+							<h2>Admin Login</h2>
+							<form action="/admins_login/" method="post">
+								{% csrf_token %}
+								<div class="form-sub-w3">
+									<input type="text" name="username" placeholder="Username " required="" autocomplete="off"/>
+								<div class="icon-w3">
+									<i class="fa fa-user" aria-hidden="true"></i>
+								</div>
+								</div>
+								<div class="form-sub-w3">
+									<input type="password" name="password" placeholder="Password" required="" id="password2" autocomplete="off"/>
+								<div class="icon-w3">
+									<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+								</div>
+								</div>
+								<label class="anim">
+								<input type="checkbox" class="checkbox" class="show-password-checkbox" onclick="showPassword1()">
+									<span>Show Password</span>
+
+								</label> 
+								<div class="clear"></div>
+								<div class="submit-agileits">
+									<input type="submit" value="Login">
+								</div>
+								<br>
+								<div>
+									<a href="/"><input type="button" style="text-align: center;
+    border: 0;
+    color: #ffffff;
+    margin-left:112px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 90px;
+    background-color: rgba(0, 0, 0, 0.34);
+    border: 3px solid #00c6d7;
+    -webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
+    outline: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+	" value="Back"></a>
+								</div>
+							</form>
+
+						</div>
+				<!--//form-ends-here-->
+
+		</div>
+		<!--//main-->
+		<!--footer-->
+
+		<!--//footer-->
+</body>
+<script>
+    function showPassword1() {
+        var passwordField1 = document.getElementById("password2");
+
+        if (passwordField1.type === "password") {
+            passwordField1.type = "text";
+        } else {
+            passwordField1.type = "password";
+        }
+    }
+</script>
+</html>

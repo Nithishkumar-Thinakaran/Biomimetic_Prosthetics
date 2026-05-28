@@ -1,0 +1,191 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+      <base href="\static\actubio\actubio_home\">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ActuBio | ActuBio :: ActuBio</title>
+     <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+  </head>
+<style>
+  .Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: black;
+  <!--  background-color: #FEBC35;-->
+}
+
+
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+
+}
+
+.sign svg path {
+  fill: white;
+}
+
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+
+.Btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: Black;
+}
+
+.sign1 {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign1 svg {
+  width: 17px;
+}
+</style>
+
+<body style="background-image:url({% static 'images/6.jpg' %});background-repeat: no-repeat; background-position: -100px -200px; min-height: 100vh;">
+
+<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="/AB_home/"><span class="fa fa-info"> -</span> Actubio</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size:18px;font-family: 'Poppins', sans-serif;">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/AB_home/">HOME</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/BA_Record/">BIOANALYSIS REPORT</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/AB_Process/">PROCESS ACTUBIO</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/actu_bio_report/">ACTUBIO REPORT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/AB_logout/">LOGGING OUT</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+   <center><h2 style="color:white; ">ACTU-BIO REPORT</h2></center>
+       <br>
+      <div style="max-width: 1200px; margin-left:200px;overflow: auto;max-height: 400px;">
+        <table class="table custom-table">
+          <thead style="background-color:#ff9f1c;">
+            <tr STYLE="text-align:center;">
+
+              <th STYLE="text-align:center;color:black;">CLIENT ID</th>
+              <th STYLE="text-align:center;color:black;">PROSTHETICS TYPE</th>
+              <th STYLE="text-align:center;color:black;">ACTUATION MECHANISM</th>
+              <th STYLE="text-align:center;color:black;">BIOCOMPATIBILITY FACTORS</th>
+              <th STYLE="text-align:center;color:black;">TYPICAL FORCE OUTPUT</th>
+              <th STYLE="text-align:center;color:black;">SPECIFIC SURFACE AREA(m²/g)</th>
+              <th STYLE="text-align:center;color:black;">CONTROL RESPONSE TIME(ms)</th>
+              <th STYLE="text-align:center;color:black;">ENERGY DENSITY(kJ/kg)</th>
+              <th STYLE="text-align:center;color:black;">WEIGHT(kg/m³)</th>
+      </tr>
+          </thead>
+          <tbody>
+          {% for i in data %}
+            <tr STYLE="text-align:center; background-color:white;">
+                      <td style="color:black;">{{i.c_id}}</td>
+                        <td style="color:black;">{{i.prosthetics_type}}</td>
+                        <td style="color:black;">{{i.Actuation_Mechanism}}</td>
+                        <td style="color:black;">{{i.Biocompatibility_Factors}}</td>
+                        <td style="color:black;">{{i.Typical_Force_Output_N}}</td>
+                        <td style="color:black;">{{i.Specific_Surface_Area}}</td>
+                        <td style="color:black;">{{i.Control_Response_Time}}</td>
+                        <td style="color:black;">{{i.Energy_Density}}</td>
+                        <td style="color:black;">{{i.Weight_Actubio}}</td>
+
+
+
+            </tr>
+          {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+<script>
+    function openMinimizedWindow(url) {
+        window.open(url, 'ReportWindow', 'width=620,height=800,resizable=yes,scrollbars=yes,status=yes');
+    }
+</script>
+  </body>
+</html>

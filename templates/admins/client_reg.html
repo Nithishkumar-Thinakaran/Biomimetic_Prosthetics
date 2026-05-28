@@ -1,0 +1,299 @@
+{% extends 'admins/Extends/admins_home1.html' %}
+{% block content %}
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+  </head>
+  <style>
+    button-0 {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: green;
+}
+
+button-0, button-0 span {
+ transition: 200ms;
+}
+
+button-0 .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+button-0 .icon {
+ position: absolute;
+ border-left: 1px solid #ffffff;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-0 svg {
+ width: 15px;
+ fill: #eee;
+}
+
+button-0:hover {
+ background: green;
+}
+
+button-0:hover .text {
+ color: transparent;
+}
+
+button-0:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+button-0:focus {
+ outline: none;
+}
+
+button-0:active .icon svg {
+ transform: scale(0.8);
+}
+
+
+
+
+    button1 {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+button1, button span {
+ transition: 200ms;
+}
+
+button1 .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+button1 .icon {
+ position: absolute;
+ border-left: 1px solid #ffffff;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button1 svg {
+ width: 15px;
+ fill: #eee;
+}
+
+button1:hover {
+ background: #ff3636;
+}
+
+button1:hover .text {
+ color: transparent;
+}
+
+button1:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+button1:focus {
+ outline: none;
+}
+
+button1:active .icon svg {
+ transform: scale(0.8);
+}
+
+
+
+
+    button-rn  {
+ width: 90px;
+ height: 30px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+
+button-rn .icon {
+ position: absolute;
+ border-left: 0px solid #ff3636;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-rn svg {
+ width: 15px;
+ fill: #eee;
+}
+
+
+    button-gn  {
+ width: 90px;
+ height: 35px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: green;
+}
+
+
+button-gn .icon {
+ position: absolute;
+ border-left: 0px solid #ff3636;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-gn svg {
+ width: 15px;
+ fill: #eee;
+}
+
+
+
+  </style>
+
+
+  <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'images/3.jpg' %});
+    background-repeat: no-repeat; min-height: 100vh;">
+   <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+    <center><h2 style="color:white;margin-top:100px;">CLIENT RECORD</h2></center>
+      <div style="max-width: 1200px; margin-left:200px; margin-top:10px;overflow:auto;max-height:400px;">
+
+          <br>
+        <table class="table custom-table">
+          <thead style="background-color:#ff9f1c;">
+            <tr STYLE="text-align:center;">
+
+              <th scope="col">CLIENT ID</th>
+              <th scope="col">NAME</th>
+              <th scope="col">EMAIL</th>
+              <th scope="col">PHONE NO</th>
+              <th scope="col" COLSPAN="2">ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for i in data %}
+            <tr STYLE="text-align:center; background-color:white;">
+                      <td style="color:black;">{{i.c_id}}</td>
+                      <td style="color:black;">{{i.name}}</td>
+                      <td style="color:black;">{{i.email}}</td>
+                      <td style="color:black;">{{i.phone}}</td>
+
+                {% if i.approve is False and i.reject is False %}
+				    <td>
+                        <a href="/approve/{{i.id}}/">
+                            <button-0 class="noselect">
+                                <span class="text">Approve</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19l12-12-1.4-1.4z"></path>
+                                        </svg>
+                                    </span>
+                            </button-0>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/reject/{{i.id}}/">
+                            <button1 class="noselect">
+                                <span class="text">Reject</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                                        </svg>
+                                    </span>
+                            </button1>
+                        </a>
+                    </td>
+                {% endif %}
+				{% if i.approve is True %}
+				    <td>
+                        <button-gn class="noselect">
+                            <span class="icon" style="margin-left:-85px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                     <path d="M9 16.2L4.18 12l-1.4 1.4L9 19l15-12-1.4-1.4z"></path>
+                                </svg>
+                            </span>
+                        </button-gn>
+                    </td>
+				    <td><p style="color:red;"><span>No Action</span></p></td>
+				{% elif i.reject is True %}
+				    <td><p style="color:green;"><span>No Action</span></p></td>
+			 	    <td>
+                        <button-rn class="noselect">
+                            <span class="icon" style="margin-left:-85px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                                </svg>
+                            </span>
+                        </button-rn>
+                    </td>
+				{% endif %}
+            </tr>
+          {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+  </body>
+
+
+{% endblock %}
+</html>

@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="zxx">
+
+<head>
+	<title>BioAnalysis | Home :: Biomimetic Prosthetics</title>
+	<base href="\static\bioanalysis\bioanalysis_home\assets\">
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Fruitage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<!-- //Web-Fonts -->
+</head>
+
+<body>
+   <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+	<!-- header -->
+	<header>
+		<!-- navigation -->
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container">
+					<!-- logo -->
+					<a class="navbar-brand font-weight-bold" href="/BA_home/">
+						<i class="fa fa-info-circle mr-2" aria-hidden="true"></i>Bio Analysis
+					</a>
+					<!-- //logo -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="/BA_home/">Home
+								</a>
+							</li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="/IntegrateHub_Report/">IH Report</a>
+							</li>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href="/bioanalysis/">Process BioAnalysis</a>
+							</li>
+
+							<li class="nav-item ml-lg-4 mt-lg-0 mt-3">
+								<a class="nav-link" href="/bioanalysis_report/">BA Report</a>
+							</li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+							<li class="nav-item ml-lg-4 mt-lg-0 mt-3">
+								<a class="nav-link" href="/BA_logout/">Logging Out</a>
+							</li>
+
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- //navigation -->
+	</header>
+	<!-- //header -->
+
+	<!-- banner -->
+	<div class="slider">
+		<!-- Slideshow -->
+		<ul class="rslides" id="slider">
+			<li>
+				<div class="slider-info banner-1">
+					<div class="container">
+						<div class="style-banner">
+							<h3 class="text-white font-weight-bold">Nature's design, reimagined for a better life</h3>
+
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="slider-info banner-2">
+					<div class="container">
+						<div class="style-banner">
+							<h3 class="text-white font-weight-bold">Nature's elegance, engineered for functionality</h3>
+
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="slider-info banner-3">
+					<div class="container">
+						<div class="style-banner">
+							<h3 class="text-white font-weight-bold">Embracing nature's wisdom, enhancing human potential</h3>
+
+
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<section class="works-agiles py-5" id="work">
+		<div class="container py-xl-5 py-lg-3">
+			<!-- heading title -->
+			<div class="main-title text-center mb-5 pb-3">
+				<h3 class="tittle text-dark font-weight-bold">Our Work</h3>
+				<p class="sub-tittle mt-2" style="text-align:justify;">Biomimetic prosthetics revolutionize the field of prosthetic limbs by emulating the natural form and function of human body parts. Inspired by nature's design, these prosthetics are crafted to restore mobility and enhance the quality of life for amputees. By mimicking the structure and movement of biological limbs, biomimetic prosthetics offer a more natural gait and improved comfort, allowing users to regain a sense of normalcy in their daily lives. Through innovative materials and advanced engineering, these prosthetics are pushing the boundaries of what is possible, offering a glimpse into a future where human-machine integration is seamless and life-changing.</p>
+			</div>
+			<!-- //heading title -->
+			<div class="price-right">
+				<div class="tabs">
+					<ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+							 aria-selected="true">Category 1</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+							 aria-selected="false">Category 2</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="menu-grids">
+								<div class="row">
+									<div class="col-lg-6 price-main-info">
+										<div class="tabs-sect-w3ls mb-sm-5 mb-4">
+											<h3 class="text-dark font-weight-bold text-mobile-w3-2">Category 1</h3>
+											<h4 class="mt-3 font-italic dtyle-title">Biomimetic Prosthetics: Where technology meets nature for a better tomorrow</h4>
+										</div>
+										<div class="progress-one">
+											<h4 class="progress-tittle">Nature's Inspiration</h4>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 95%"
+												 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+										<div class="progress-one two-progress">
+											<h4 class="progress-tittle">Technology at its Best</h4>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 88%"
+												 aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+										<div class="progress-one">
+											<h4 class="progress-tittle">Seamless Integration</h4>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
+												 aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 price-main-info-2 mt-lg-0 mt-5">
+										<img src="images/farmer2.jpg" alt="" class="img-fluid">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<div class="menu-grids">
+								<div class="row">
+									<div class="col-lg-6 price-main-info-2">
+										<img src="images/farmer1.jpg" alt="" class="img-fluid">
+									</div>
+									<div class="col-lg-6 price-main-info mt-lg-0 mt-5">
+										<div class="tabs-sect-w3ls mb-sm-5 mb-4">
+											<h3 class="text-dark font-weight-bold text-mobile-w3-2">Category 2</h3>
+											<h4 class="mt-3 font-italic dtyle-title">Biomimetic Prosthetics: A testament to human resilience and technological advancement</h4>
+										</div>
+										<div class="progress-one">
+											<h4 class="progress-tittle">Restoring Dignity</h4>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 95%"
+												 aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+										<div class="progress-one two-progress">
+											<h4 class="progress-tittle">Revolutionizing Prosthetics</h4>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 88%"
+												 aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+										<div class="progress-one">
+											<h4 class="progress-tittle">Nature's Beauty, Enhanced</h4>
+											<div class="progress">
+												<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
+												 aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //work -->
+
+	<!-- footer -->
+<!--	<footer class="footer-emp-w3ls py-sm-5 py-4">-->
+<!--		<div class="container py-xl-5 py-lg-3">-->
+<!--			<div class="row footer-top">-->
+<!--				<div class="col-lg-3 col-sm-6 footer-grid-wthree">-->
+<!--					<h1 class="footer-title text-uppercase text-white mb-lg-5 mb-4">Who We Are</h1>-->
+<!--					<div class="contact-info">-->
+<!--						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem-->
+<!--							aperiam, eaque ipsa quae.</p>-->
+<!--						<a href="about.html" class="btn button-style mt-sm-4 mt-3">About Us</a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-sm-0 mt-5">-->
+<!--					<h3 class="footer-title text-uppercase text-white mb-lg-5 mb-4">Latest News</h3>-->
+<!--					<div class="contact-info">-->
+<!--						<div class="footer-style-w3ls">-->
+<!--							<h4 class="text-light mb-2">Sed ut piciatis unde</h4>-->
+<!--							<p>30 Sep 2018</p>-->
+<!--						</div>-->
+<!--						<div class="footer-style-w3ls my-4">-->
+<!--							<h4 class="text-light mb-2">Modi tempra incunt</h4>-->
+<!--							<p>02 Aug 2018</p>-->
+<!--						</div>-->
+<!--						<div class="footer-style-w3ls">-->
+<!--							<h4 class="text-light mb-2">ullam corpis sucipit</h4>-->
+<!--							<p>06 Aug 2018</p>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-5">-->
+<!--					<h3 class="footer-title text-uppercase text-white mb-lg-5 mb-4">Contact Us</h3>-->
+<!--					<div class="contact-info">-->
+<!--						<div class="footer-style-w3ls">-->
+<!--							<h4 class="text-light mb-2">Phone</h4>-->
+<!--							<p>+121 098 8907 9987</p>-->
+<!--						</div>-->
+<!--						<div class="footer-style-w3ls my-4">-->
+<!--							<h4 class="text-light mb-2">Email </h4>-->
+<!--							<p><a href="mailto:info@example.com">info@example.com</a></p>-->
+<!--						</div>-->
+<!--						<div class="footer-style-w3ls">-->
+<!--							<h4 class="text-light mb-2">Location</h4>-->
+<!--							<p>Honey Avenue, New York City</p>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-5">-->
+<!--					<h2 class="footer-title text-white mb-lg-5 mb-4">Quick Links</h2>-->
+<!--					<ul class="links list-unstyled">-->
+<!--						<li>-->
+<!--							<a href="index.html">Home</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="about.html">About Us</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a class="scroll" href="#works">Our Work</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="gallery.html">Gallery</a>-->
+<!--						</li>-->
+<!--						<li>-->
+<!--							<a href="contact.html" class="m-0">Contact Us</a>-->
+<!--						</li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		<div class="copy-right-top border-top mt-5">-->
+<!--			<p class="copy-right text-center pt-xl-5 pt-4">&copy; 2018 Fruitage. All Rights Reserved | Design by-->
+<!--				<a href="http://w3layouts.com/"> W3layouts </a>-->
+<!--			</p>-->
+<!--		</div>-->
+<!--	</footer>-->
+	<!-- //footer -->
+
+
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- fixed navigation -->
+	<script src="js/fixed-nav.js"></script>
+	<!-- //fixed navigation -->
+	<!-- dropdown smooth -->
+	<script>
+		$(document).ready(function () {
+				$(".dropdown").hover(
+					function () {
+						$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+						$(this).toggleClass('open');
+					},
+					function () {
+						$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+						$(this).toggleClass('open');
+					}
+				);
+			});
+		</script>
+	<!-- //dropdown smooth -->
+
+	<!-- banner -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 1
+			$("#slider").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!-- //banner -->
+
+	<!-- search plugin -->
+	<!-- pop-up-box -->
+	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.magnific-popup.js"></script>
+	<!-- //pop-up-box -->
+	<!-- search script -->
+	<script>
+		$(document).ready(function () {
+			$('.popup-with-zoom-anim').magnificPopup({
+				type: 'inline',
+				fixedContentPos: false,
+				fixedBgPos: true,
+				overflowY: 'auto',
+				closeBtnInside: true,
+				preloader: false,
+				midClick: true,
+				removalDelay: 300,
+				mainClass: 'my-mfp-zoom-in'
+			});
+		});
+	</script>
+	<!-- //search script -->
+	<!-- //search plugin -->
+
+	<!-- stats -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.countup.js"></script>
+	<script>
+		$('.counter').countUp();
+	</script>
+	<!-- //stats -->
+
+	<!-- smooth scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- move-top -->
+	<script src="js/move-top.js"></script>
+	<!-- easing -->
+	<script src="js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="js/fruitage.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+	<!-- //Js files -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<base href="\static\client\client_home\assets\">
+	<title>Biomimetic Prosthetic | Client :: Home</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Inside Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+
+
+
+
+
+</head>
+<body style="background-image: url({% static 'images/2.jpg' %}); background-repeat:no-repeat;">
+
+<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+	<header style="background-color:white;">
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container-fluid">
+					<a class="navbar-brand font-weight-bold" href="/client_home/">
+						<i class="fa fa-ils mr-2" aria-hidden="true"></i>Client
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="/client_home/">Home
+								</a>
+							</li>
+							<li class="nav-item mx-xl-5 mx-lg-3 my-lg-0 my-3 ">
+								<a class="nav-link" href="/client_req/">Upload Requirements</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="/checkpoints/">CheckPoints</a>
+							</li>
+							<li class="nav-item mx-xl-5 mx-lg-3 my-lg-0 my-3">
+								<a class="nav-link" href="/client_logout/">Logging Out</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+
+<center><h1 style="color:white;margin-left:50px; margin-top:100px;">PATIENT CHECKPOINTS</h1></center>
+      <div class="table-responsive" style="margin-left:250px; margin-top:50px;max-height:300px; overflow:auto; width:70%;">
+            <table class="table custom-table">
+                <thead style="background-color:#8e43e7;">
+                    <tr>
+                      <th  STYLE="text-align:center;color:black;">CLIENT ID</th>
+                      <th  STYLE="text-align:center;color:black;">NAME</th>
+                      <th STYLE="text-align:center;color:black;">EMAIL</th>
+                      <th  STYLE="text-align:center;color:black;">PHONE NO</th>
+                      <th  STYLE="text-align:center;color:black;">STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr STYLE="text-align:center; background-color:white;">
+                        <td style="color:black;">{{data.c_id}}</td>
+                        <td style="color:black;">{{data.name}}</td>
+                        <td style="color:black;">{{data.email}}</td>
+                        <td style="color:black;">{{data.phone}}</td>
+                        <td style="color:black;">{{data.status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+      </div>
+
+</body>
+</html>

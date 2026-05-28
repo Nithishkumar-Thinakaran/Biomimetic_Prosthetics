@@ -1,0 +1,32 @@
+INTEGRATION PROCESSING
+
+---------------------------------------------------------------------------------------------
+S.ID: CLI:23958
+prosthetics_type: Cartilage Repair (Leg)
+---------------------------------------------------------------------------------------------
+Biomimetic Hydrogel: Alginate
+
+Key Material: Alginate salts, divalent cations, cell culture medium
+
+Application Description Section Depth: Repair damaged cartilage in the knee
+
+Key Properties: Biocompatibility, gelation kinetics, cell adhesion
+
+Manufacturing Process: Mixing alginate with divalent cations, incorporating cells
+
+Clinical Status: Preclinical 
+
+Biomimetic_Material: Chitosan
+Quantity: 8.0 kg
+Biomimetic_Material: Hydroxyapatite
+Quantity: 3.0 kg
+Biomimetic_Material: Polyglycolic acid (PGA)
+Quantity: 4.0 kg
+Biomimetic_Material: Polycaprolactone (PCL)
+Quantity: 2.5 kg
+Biomimetic_Material: Fibrin
+Quantity: 3.5 kg
+Biomimetic_Material: Collagen Type II
+Quantity: 6.0 kg
+Biomimetic_Material: Alginate
+Quantity: 5.0 kg

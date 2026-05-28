@@ -1,0 +1,32 @@
+INTEGRATION PROCESSING
+
+---------------------------------------------------------------------------------------------
+S.ID: CLI:24066
+prosthetics_type: Tendon & Ligament Repair (Hand)
+---------------------------------------------------------------------------------------------
+Biomimetic Hydrogel: HA
+
+Key Material: HA polymers, crosslinkers, buffers
+
+Application Description Section Depth: Repair damaged tendons and ligaments in the hand
+
+Key Properties: Mechanical strength, biocompatibility, degradation rate
+
+Manufacturing Process: Injection or implantation of crosslinked HA
+
+Clinical Status: Clinical trials 
+
+Biomimetic_Material: Collagen-based scaffold
+Quantity: 6.0 kg
+Biomimetic_Material: Alginate
+Quantity: 4.0 kg
+Biomimetic_Material: Polypropylene
+Quantity: 6.0 kg
+Biomimetic_Material: Polycaprolactone (PCL)
+Quantity: 3.0 kg
+Biomimetic_Material: Polyethylene glycol (PEG)
+Quantity: 5.0 kg
+Biomimetic_Material: Hyaluronic acid
+Quantity: 2.0 kg
+Biomimetic_Material: Silk fibroin
+Quantity: 4.0 kg

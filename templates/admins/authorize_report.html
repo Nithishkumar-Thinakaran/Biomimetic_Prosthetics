@@ -1,0 +1,450 @@
+{% extends 'admins/Extends/admins_home5.html' %}
+{% block content %}
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+  </head>
+  <style>
+    button-0 {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: green;
+}
+
+button-0, button-0 span {
+ transition: 200ms;
+}
+
+button-0 .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+button-0 .icon {
+ position: absolute;
+ border-left: 1px solid #ffffff;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-0 svg {
+ width: 15px;
+ fill: #eee;
+}
+
+button-0:hover {
+ background: green;
+}
+
+button-0:hover .text {
+ color: transparent;
+}
+
+button-0:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+button-0:focus {
+ outline: none;
+}
+
+button-0:active .icon svg {
+ transform: scale(0.8);
+}
+
+
+
+
+    button1 {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+button1, button span {
+ transition: 200ms;
+}
+
+button1 .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+button1 .icon {
+ position: absolute;
+ border-left: 1px solid #ffffff;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button1 svg {
+ width: 15px;
+ fill: #eee;
+}
+
+button1:hover {
+ background: #ff3636;
+}
+
+button1:hover .text {
+ color: transparent;
+}
+
+button1:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+button1:focus {
+ outline: none;
+}
+
+button1:active .icon svg {
+ transform: scale(0.8);
+}
+
+
+
+
+    button-rn  {
+ width: 90px;
+ height: 30px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+
+button-rn .icon {
+ position: absolute;
+ border-left: 0px solid #ff3636;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-rn svg {
+ width: 15px;
+ fill: #eee;
+}
+
+
+    button-gn  {
+ width: 90px;
+ height: 35px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: green;
+}
+
+
+button-gn .icon {
+ position: absolute;
+ border-left: 0px solid #ff3636;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-gn svg {
+ width: 15px;
+ fill: #eee;
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable {
+  line-height: 20px;
+  font-size: 17px;
+  color: #5D41DE;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  background: #5e41de4d;
+}
+
+.button:hover .svg-icon {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+    .Documents-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 45px;
+  border: none;
+  padding: 0px 17px;
+  border-radius: 5px;
+  background: linear-gradient(to left bottom, #9b3ce8, #3386ef, #13bcec);
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.folderContainer {
+  width: 40px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.fileBack {
+  z-index: 1;
+  width: 80%;
+  height: auto;
+}
+.filePage {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+.fileFront {
+  width: 85%;
+  height: auto;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.95;
+  transform-origin: bottom;
+  transition: all 0.3s ease-out;
+}
+.text {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.Documents-btn:hover .filePage {
+  transform: translateY(-5px);
+}
+.Documents-btn:hover {
+  background-color: rgb(58, 58, 94);
+}
+.Documents-btn:hover .fileFront {
+  transform: rotateX(30deg);
+}
+  </style>
+
+
+  <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'images/3.jpg' %});
+    background-repeat: no-repeat; min-height: 100vh;">
+   <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+    <center><h2 style="color:white;margin-top:100px;">AUTHORIZE REPORT</h2></center>
+      <div style="max-width: 1200px; margin-left:200px; margin-top:10px;overflow:auto;max-height:400px;">
+
+          <br>
+        <table class="table custom-table">
+          <thead style="background-color:#ff9f1c;">
+            <tr STYLE="text-align:center;">
+
+              <th scope="col">CLIENT ID</th>
+              <th scope="col" >REPORT</th>
+              <th scope="col" COLSPAN="2">ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for i in data %}
+            <tr STYLE="text-align:center; background-color:white;">
+                      <td style="color:black;">{{i.c_id}}</td>
+                {% if i.finalreportview is False %}
+                      <td>
+                          <a href="/view_final_report/{{i.c_id}}/">
+                            <button class="button" style="margin-left:200px;" >
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 20 20" height="20" fill="none" class="svg-icon"><g stroke-width="1.5" stroke-linecap="round" stroke="#5d41de"><circle r="2.5" cy="10" cx="10"></circle><path fill-rule="evenodd" d="m8.39079 2.80235c.53842-1.51424 2.67991-1.51424 3.21831-.00001.3392.95358 1.4284 1.40477 2.3425.97027 1.4514-.68995 2.9657.82427 2.2758 2.27575-.4345.91407.0166 2.00334.9702 2.34248 1.5143.53842 1.5143 2.67996 0 3.21836-.9536.3391-1.4047 1.4284-.9702 2.3425.6899 1.4514-.8244 2.9656-2.2758 2.2757-.9141-.4345-2.0033.0167-2.3425.9703-.5384 1.5142-2.67989 1.5142-3.21831 0-.33914-.9536-1.4284-1.4048-2.34247-.9703-1.45148.6899-2.96571-.8243-2.27575-2.2757.43449-.9141-.01669-2.0034-.97028-2.3425-1.51422-.5384-1.51422-2.67994.00001-3.21836.95358-.33914 1.40476-1.42841.97027-2.34248-.68996-1.45148.82427-2.9657 2.27575-2.27575.91407.4345 2.00333-.01669 2.34247-.97026z" clip-rule="evenodd"></path></g></svg>
+                              <span class="lable">Drawup</span>
+                            </button></a></td>
+                          {% else %} <td>
+                {% if i.bp_final_report %}
+<a href="{{ i.bp_final_report.url }}" target="_blank"><button class="Documents-btn" style="margin-left:220px;" onclick="openMinimizedWindow('{{ i.bp_final_report.url }}')">
+                <span class="folderContainer">
+                    <svg class="fileBack" width="146" height="113" viewBox="0 0 146 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z" fill="url(#paint0_linear_117_4)"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear_117_4" x1="0" y1="0" x2="72.93" y2="95.4804" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#a040fd"></stop>
+                                <stop offset="1" stop-color="#5f41f3"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg class="filePage" width="88" height="99" viewBox="0 0 88 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+                        <defs>
+                            <linearGradient id="paint0_linear_117_6" x1="0" y1="0" x2="81" y2="160.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white"></stop>
+                                <stop offset="1" stop-color="#686868"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg class="fileFront" width="160" height="79" viewBox="0 0 160 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z" fill="url(#paint0_linear_117_5)"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear_117_5" x1="38.7619" y1="8.71323" x2="66.9106" y2="82.8317" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#a040fd"></stop>
+                                <stop offset="1" stop-color="#5251f2"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+
+            </button></a>
+            {% else %}
+            No File Available
+                {% endif %}
+
+
+
+            </td>
+                          {% endif %}
+<script>
+    function openMinimizedWindow(url) {
+        // Open a new window with specific dimensions
+        window.open(url, 'ReportWindow', 'width=600,height=800,resizable=yes,scrollbars=yes,status=yes');
+    }
+</script>
+
+
+                {% if i.finalreportapprove is False and i.finalreportreject is False %}
+				    <td>
+                        <a href="/finalreportapprove/{{i.c_id}}/">
+                            <button-0 class="noselect">
+                                <span class="text">Approve</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19l12-12-1.4-1.4z"></path>
+                                        </svg>
+                                    </span>
+                            </button-0>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/finalreportreject/{{i.c_id}}/">
+                            <button1 class="noselect">
+                                <span class="text">Reject</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                            <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                                        </svg>
+                                    </span>
+                            </button1>
+                        </a>
+                    </td>
+                {% endif %}
+				{% if i.finalreportapprove is True %}
+				    <td>
+                        <button-gn class="noselect">
+                            <span class="icon" style="margin-left:-85px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                     <path d="M9 16.2L4.18 12l-1.4 1.4L9 19l15-12-1.4-1.4z"></path>
+                                </svg>
+                            </span>
+                        </button-gn>
+                    </td>
+				    <td><p style="color:red;"><span>No Action</span></p></td>
+				{% elif i.finalreportreject is True %}
+				    <td><p style="color:green;"><span>No Action</span></p></td>
+			 	    <td>
+                        <button-rn class="noselect">
+                            <span class="icon" style="margin-left:-85px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path>
+                                </svg>
+                            </span>
+                        </button-rn>
+                    </td>
+				{% endif %}
+            </tr>
+          {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+  </body>
+
+
+{% endblock %}
+</html>

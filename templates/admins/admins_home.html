@@ -1,0 +1,375 @@
+
+<!doctype html>
+{% load static %}
+<html lang="zxx">
+<head>
+  <base href="\static\admins\admins_home\">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Biomimetic Prosthetics | Admin :: Page</title>
+  <!-- google fonts -->
+  <link href="//fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- Template CSS -->
+</head>
+
+<body>
+   <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+  <!--header-->
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <h1><a class="navbar-brand mr-lg-5" href="/admins_home/">
+          <span class="log">Admin</span>Hub
+          </a></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- if logo is image enable this
+      <a class="navbar-brand" href="#index.html">
+          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+      </a> -->
+        <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/admins_home/">Home <span class="sr-only">(current)</span></a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Manage Logs <span class="fa fa-angle-down"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"></a>
+                        <a class="dropdown-item" href="/client_reg/">Client</a>
+
+                  </div>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Validate Reports <span class="fa fa-angle-down"></span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"></a>
+                      <a class="dropdown-item" href="/IH_Result/">Integrate Hub</a>
+                    <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/BA_Result/">BioAnalysis</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/AB_Result/">ActuBio</a>
+                  </div>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <li class="nav-item">
+              <a class="nav-link" href="/authorize_report/">Authorize Reports</a>
+            </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <a class="nav-link" href="/admins_logout/">Logging Out</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="d-lg-block d-none">
+        </div>
+        <!-- toggle switch for light and dark theme -->
+        <div class="mobile-position">
+          <nav class="navigation">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="mode-container">
+                  <i class="gg-sun"></i>
+                  <i class="gg-moon"></i>
+                </div>
+              </label>
+            </div>
+          </nav>
+        </div>
+        <!-- //toggle switch for light and dark theme -->
+      </nav>
+    </div>
+  </header>
+  {% block content %}
+  <!-- //header -->
+  <!-- main-slider -->
+  <section class="w3l-main-slider" id="home">
+    <div class="companies20-content">
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view bg bg2">
+              <div class="banner-info">
+                <div class="container">
+                  <div class="banner-info-bg text-left">
+                    <p>Administrative Excellence</p>
+                    <h5>Efficiency Personified</h5>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div class="item">
+          <li>
+            <div class="slider-info  banner-view banner-top1 bg bg2">
+              <div class="banner-info">
+                <div class="container">
+                  <div class="banner-info-bg text-left">
+                    <p>Leadership Insight</p>
+                    <h5>Strategic Vision</h5>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view banner-top2 bg bg2">
+              <div class="banner-info">
+                <div class="container">
+                  <div class="banner-info-bg text-left">
+                    <p>Operational Mastery</p>
+                    <h5>Effortless Efficiency</h5>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="w3l-services1">
+    <div id="content-with-photo4-block" class="py-5">
+      <div class="container py-md-5">
+        <div class="cwp4-two row">
+          <div class="cwp4-image col-lg-6 pr-lg-5 mb-lg-0 mb-5">
+            <img src="assets/images/g3.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="cwp4-text col-lg-6">
+            <h6 class="sub-title">what We Do</h6>
+            <h3 class="hny-title">What We Offer for You</h3>
+
+            <ul class="cont-4">
+              <li><span class="fa fa-check"></span>Streamlined Operations</li>
+              <li><span class="fa fa-check"></span>Enhanced Efficiency</li>
+              <li><span class="fa fa-check"></span>Improved Oversight</li>
+              <li><span class="fa fa-check"></span>Advanced Analytics</li>
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="w3l-footer-29-main w3l-copyright">
+    <div class="container">
+
+    </div>
+
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      <span class="fa fa-angle-up"></span>
+    </button>
+    {% endblock %}
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+  </section>
+  <!-- //footer-29 block -->
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+  <!-- Template JavaScript -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/theme-change.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- script for banner slider-->
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: true
+          },
+          1000: {
+            items: 1,
+            nav: true
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script -->
+  <!-- script for tesimonials carousel slider -->
+  <script>
+    $(document).ready(function () {
+      $("#owl-demo1").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          736: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items:1,
+            nav: false,
+            loop:true
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //script for tesimonials carousel slider -->
+  <!-- stats number counter-->
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+  <!-- video popup -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
+  <!-- //video popup -->
+
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

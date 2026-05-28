@@ -1,0 +1,382 @@
+{% extends 'admins/Extends/admins_home2.html' %}
+{% block content %}
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+
+  </head>
+  <style>
+    button-0 {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: green;
+}
+
+button-0, button-0 span {
+ transition: 200ms;
+}
+
+button-0 .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+button-0 .icon {
+ position: absolute;
+ border-left: 1px solid #ffffff;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-0 svg {
+ width: 15px;
+ fill: #eee;
+}
+
+button-0:hover {
+ background: green;
+}
+
+button-0:hover .text {
+ color: transparent;
+}
+
+button-0:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+button-0:focus {
+ outline: none;
+}
+
+button-0:active .icon svg {
+ transform: scale(0.8);
+}
+
+
+
+
+    button1 {
+ width: 150px;
+ height: 50px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+button1, button span {
+ transition: 200ms;
+}
+
+button1 .text {
+ transform: translateX(35px);
+ color: white;
+ font-weight: bold;
+}
+
+button1 .icon {
+ position: absolute;
+ border-left: 1px solid #ffffff;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button1 svg {
+ width: 15px;
+ fill: #eee;
+}
+
+button1:hover {
+ background: #ff3636;
+}
+
+button1:hover .text {
+ color: transparent;
+}
+
+button1:hover .icon {
+ width: 150px;
+ border-left: none;
+ transform: translateX(0);
+}
+
+button1:focus {
+ outline: none;
+}
+
+button1:active .icon svg {
+ transform: scale(0.8);
+}
+
+
+
+
+    button-rn  {
+ width: 90px;
+ height: 30px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+}
+
+
+button-rn .icon {
+ position: absolute;
+ border-left: 0px solid #ff3636;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-rn svg {
+ width: 15px;
+ fill: #eee;
+}
+
+
+    button-gn  {
+ width: 90px;
+ height: 35px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: green;
+}
+
+
+button-gn .icon {
+ position: absolute;
+ border-left: 0px solid #ff3636;
+ transform: translateX(110px);
+ height: 40px;
+ width: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+button-gn svg {
+ width: 15px;
+ fill: #eee;
+}
+
+
+.readmore-btn {
+  width: fit-contentd;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 15px;
+  gap: 0px;
+  transition: all 0.4s;
+}
+.book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 45px;
+  height: 100%;
+}
+.book-wrapper .book-page {
+  width: 53%;
+  height: auto;
+  position: absolute;
+}
+.readmore-btn:hover .book-page {
+  animation: paging 0.4s linear infinite;
+  transform-origin: left;
+}
+.readmore-btn:hover {
+  background-color: #ff9f1c;
+}
+@keyframes paging {
+  0% {
+    transform: rotateY(0deg) skewY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg) skewY(-20deg);
+  }
+  100% {
+    transform: rotateY(180deg) skewY(0deg);
+  }
+}
+.text {
+  width: 105px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+}
+
+  </style>
+
+
+  <body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'images/3.jpg' %});
+    background-repeat: no-repeat; min-height: 100vh;">
+   <script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+
+
+   <center><h2 style="color:white; margin-top:100px;">INTEGRATE HUB RECORD</h2></center>
+      <div style="max-width: 1200px; margin-left:200px; margin-top:50px;overflow: auto;max-height: 400px;">
+
+        <table class="table custom-table">
+          <thead style="background-color:#ff9f1c;">
+            <tr STYLE="text-align:center;">
+
+              <th STYLE="text-align:center;color:black;">CLIENT ID</th>
+              <th STYLE="text-align:center;color:black;">PROSTHETICS TYPE</th>
+               <th STYLE="text-align:center;color:black;">REPORT</th>
+
+
+            </tr>
+          </thead>
+          <tbody>
+          {% for i in data %}
+            <tr STYLE="text-align:center; background-color:white;">
+                      <td style="color:black;">{{i.c_id}}</td>
+                        <td style="color:black;">{{i.prosthetics_type}}</td>
+                        <td style="color:black;">
+                            <a href="{{ i.Integrate_Hub_Report.url }}" target="_blank" onclick="openMinimizedWindow('{{ i.Integrate_Hub_Report.url }}')">
+                                <button class="readmore-btn" onclick="openMinimizedWindow('{{ i.Integrate_Hub_Report.url }}')">
+                                      <span class="book-wrapper">
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="rgb(86, 69, 117)"
+                                          viewBox="0 0 126 75"
+                                          class="book"
+                                        >
+                                          <rect
+                                            stroke-width="3"
+                                            stroke="#fff"
+                                            rx="7.5"
+                                            height="70"
+                                            width="121"
+                                            y="2.5"
+                                            x="2.5"
+                                          ></rect>
+                                          <line stroke-width="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-width="4"
+                                            stroke="#fff"
+                                            d="M25 20H50"
+                                          ></path>
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-width="4"
+                                            stroke="#fff"
+                                            d="M101 20H76"
+                                          ></path>
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-width="4"
+                                            stroke="#fff"
+                                            d="M16 30L50 30"
+                                          ></path>
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-width="4"
+                                            stroke="#fff"
+                                            d="M110 30L76 30"
+                                          ></path>
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="none"
+                                          viewBox="0 0 65 75"
+                                          class="book-page"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-width="4"
+                                            stroke="#fff"
+                                            d="M40 20H15"
+                                          ></path>
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-width="4"
+                                            stroke="#fff"
+                                            d="M49 30L15 30"
+                                          ></path>
+                                          <path
+                                            stroke-width="3"
+                                            stroke="#fff"
+                                            d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
+                                          ></path>
+                                        </svg>
+                                      </span>
+                                      <span class="text">View Report</span>
+                                </button>
+                            </a>
+                        </td>
+            </tr>
+          {% endfor %}
+
+          </tbody>
+        </table>
+      </div>
+<script>
+    function openMinimizedWindow(url) {
+        window.open(url, 'ReportWindow', 'width=620,height=800,resizable=yes,scrollbars=yes,status=yes');
+    }
+</script>
+
+
+
+
+  </body>
+
+
+{% endblock %}
+</html>

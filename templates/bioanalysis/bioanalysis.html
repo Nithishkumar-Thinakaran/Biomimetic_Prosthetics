@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>BioAnalysis | Home :: Biomimetic Prosthetics</title>
+	<base href="\static\bioanalysis\bioanalysis_home\assets\">
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Fruitage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<!-- //Web-Fonts -->
+	</head>
+<style>
+    .readmore-btn {
+  width: fit-contentd;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color:#ff5722;
+  border: none;
+  border-radius: 10px;
+  padding: 0px 15px;
+  gap: 0px;
+  transition: all 0.4s;
+}
+.book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 45px;
+  height: 100%;
+
+}
+.book-wrapper .book-page {
+  width: 53%;
+  height: auto;
+  position: absolute;
+
+}
+.readmore-btn:hover .book-page {
+  animation: paging 0.4s linear infinite;
+  transform-origin: left;
+
+}
+.readmore-btn:hover {
+  background-color: #ff5722;
+}
+@keyframes paging {
+  0% {
+    transform: rotateY(0deg) skewY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg) skewY(-20deg);
+  }
+  100% {
+    transform: rotateY(180deg) skewY(0deg);
+  }
+}
+.text {
+  width: 105px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+
+}
+
+
+    .Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #02646F;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+
+
+
+.Btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #02646F;
+}
+
+.sign1 {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign1 svg {
+  width: 17px;
+}
+
+
+
+
+    .Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #34bf49;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  transition-duration: .3s;
+}
+
+
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+body {
+    background-image: url("{% static 'images/5.jpg' %}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+
+
+
+.Btn1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #34bf49;
+}
+
+.sign1 {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign1 svg {
+  width: 17px;
+}
+
+</style>
+<body>
+
+<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+<header style="background-color:white;">
+		<!-- navigation -->
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container">
+					<!-- logo -->
+					<a class="navbar-brand font-weight-bold" href="/BA_home/">
+						<i class="fa fa-info-circle mr-2" aria-hidden="true"></i>Bio Analysis
+					</a>
+					<!-- //logo -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="/BA_home/">Home
+								</a>
+							</li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<li class="nav-item mx-lg-4 my-lg-0 my-3 ">
+								<a class="nav-link" href="/IntegrateHub_Report/">IH Report</a>
+							</li>
+							<li class="nav-item mx-lg-4 my-lg-0 my-3 active">
+								<a class="nav-link" href="/bioanalysis/">Process BioAnalysis</a>
+							</li>
+
+							<li class="nav-item ml-lg-4 mt-lg-0 mt-3">
+								<a class="nav-link" href="/bioanalysis_report/">BA Report</a>
+							</li>&nbsp;&nbsp;&nbsp;&nbsp;
+
+							<li class="nav-item ml-lg-4 mt-lg-0 mt-3">
+								<a class="nav-link" href="/BA_logout/">Logging Out</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- //navigation -->
+	</header>
+
+
+<center><h1 style="color:white;margin-left:50px; margin-top:100px;">BIO ANALYSIS</h1></center>
+<div class="table-responsive" style="margin-left:250px; margin-top:60px;max-height:300px; overflow:auto; width:70%;">
+            <table class="table custom-table">
+                <thead style="background-color:#ff5722;">
+                    <tr>
+                      <th  STYLE="text-align:center;color:black;">CLIENT ID</th>
+                      <th  STYLE="text-align:center;color:black;">PROSTHETICS TYPE</th>
+                      <th  STYLE="text-align:center;color:black;">REPORT</th>
+                      <th  STYLE="text-align:center;color:black;">ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for i in data %}
+                    <tr STYLE="text-align:center; background-color:white;">
+
+                        <td style="color:black;">{{i.c_id}}</td>
+                        <td style="color:black;">{{i.prosthetics_type}}</td>
+                                <td>
+    {% if i.Integrate_Hub_Report %}
+        <a href="{{ i.Integrate_Hub_Report.url }}" target="_blank" onclick="openMinimizedWindow('{{ i.Integrate_Hub_Report.url }}')">
+
+            <button class="readmore-btn" onclick="openMinimizedWindow('{{ i.Integrate_Hub_Report.url }}')">
+  <span class="book-wrapper">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="rgb(86, 69, 117)"
+      viewBox="0 0 126 75"
+      class="book"
+    >
+      <rect
+        stroke-width="3"
+        stroke="#fff"
+        rx="7.5"
+        height="70"
+        width="121"
+        y="2.5"
+        x="2.5"
+      ></rect>
+      <line stroke-width="3" stroke="#fff" y2="75" x2="63.5" x1="63.5"></line>
+      <path
+        stroke-linecap="round"
+        stroke-width="4"
+        stroke="#fff"
+        d="M25 20H50"
+      ></path>
+      <path
+        stroke-linecap="round"
+        stroke-width="4"
+        stroke="#fff"
+        d="M101 20H76"
+      ></path>
+      <path
+        stroke-linecap="round"
+        stroke-width="4"
+        stroke="#fff"
+        d="M16 30L50 30"
+      ></path>
+      <path
+        stroke-linecap="round"
+        stroke-width="4"
+        stroke="#fff"
+        d="M110 30L76 30"
+      ></path>
+    </svg>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 65 75"
+      class="book-page"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-width="4"
+        stroke="#fff"
+        d="M40 20H15"
+      ></path>
+      <path
+        stroke-linecap="round"
+        stroke-width="4"
+        stroke="#fff"
+        d="M49 30L15 30"
+      ></path>
+      <path
+        stroke-width="3"
+        stroke="#fff"
+        d="M2.5 2.5H55C59.1421 2.5 62.5 5.85786 62.5 10V65C62.5 69.1421 59.1421 72.5 55 72.5H2.5V2.5Z"
+      ></path>
+    </svg>
+  </span>
+  <span class="text"> View Report </span>
+</button>
+
+        </a>
+    {% else %}
+        No file available
+    {% endif %}
+</td>
+                        <td style="color:black;">
+                            {% if i.badone2 is False %}
+                            <a href="/bioanalysis_process/{{i.c_id}}/"><button class="Btn">
+                                <div class="sign">
+                                    <svg viewBox="0 0 512 512">
+                                        <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+                                    </svg>
+                                </div>
+                                    <div class="text">ANALYSE</div>
+                            </button></a>
+
+                            {% else %}
+                            <button class="Btn1">
+                                <div class="sign1">
+                                    <!-- SVG for tick mark symbol -->
+                                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+    <path d="M5 13l4 4L19 7" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                            </button>
+
+                            {% endif %}
+
+                        </td>
+<script>
+    function openMinimizedWindow(url) {
+        window.open(url, 'ReportWindow', 'width=620,height=800,resizable=yes,scrollbars=yes,status=yes');
+    }
+</script>
+
+
+                    </tr>
+                 {% endfor %}
+                </tbody>
+            </table>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+Application,Actuation_Mechanism,Biocompatibility_Factors,Typical_Force_Output_N,Specific_Surface_Area,Control_Response_Time,Energy_Density,Weight
+Meniscus Replacement (Leg),Electroactive Polymers (EAPs),"Material selection (e.g., titanium, stainless steel)",10 - 50 (low),0.1 - 1 (high),100 - 1000 (slow),0.01 - 0.1 (low),"1,000 - 2,000"
+Cartilage Repair (Leg),Shape Memory Alloys (SMAs),Surface engineering (tissue integration),100 - 1000 (high),0.01 - 0.1 (low),10 - 100 (fast),0.1 - 1 (moderate),"4,500 - 6,000"
+Ankle Ligament Reconstruction (Leg),Pneumatic Actuators,Osseointegration (bone connection),N/A (external power source),N/A,"10 - 50 (fast, depends on valve design)","0.05 - 0.2 (estimated, under development)",0.1 - 1 (very low)
+Bionic Feet with Sensors (Leg) ,Bionic Muscle Fibers,Cytocompatibility,"20 - 80 (estimated, under development)",N/A,"50 - 200 (estimated, under development)","0.05 - 0.2 (estimated, under development)","1,100 - 1,300 (estimated)"
+Fingertip Prostheses (Hand),Piezoelectric Materials,"Material selection (ceramics, polymers)",1 - 10 (very low),0.1 - 0.5 (moderate),1 - 10 (fast),0.001 - 0.01 (very low),"3,000 - 8,000"
+Tendon & Ligament Repair (Hand),McKibben Actuators (pneumatic muscle),Material selection (elastomers),20 - 200 (moderate),N/A,10 - 50 (fast),0.5 - 1.0 (moderate),"1,000 - 2,000"
+Sensory Feedback (Hand),Magnetic Shape Memory Alloys (MSMAs),Surface engineering,50 - 500 (moderate),0.01 - 0.1 (low),10 - 100 (fast),0.5 - 1.0 (moderate),"6,000 - 8,000"
+Artificial Skin (Hand),Intrinsically Conducting Polymers (ICPs),Cytocompatibility,N/A,N/A,Data not yet available (actuation mechanisms under development),N/A,Data not available

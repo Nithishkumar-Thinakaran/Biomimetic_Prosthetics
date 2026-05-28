@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<base href="\static\client\client_home\assets\">
+	<title>Biomimetic Prosthetic | Client :: Home</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Inside Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<!-- //Web-Fonts -->
+
+
+
+
+
+
+
+
+
+<title>Event Registration Form Widget Flat Responsive Widget Template :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Event Registration Form Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- //custom-theme -->
+<link href="{% static 'client/client_req/assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- font-awesome-icons -->
+<!-- //font-awesome-icons -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body style="background-image: url({% static 'images/2.jpg' %}); background-repeat:no-repeat;">
+
+<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+
+	<header style="background-color:white;">
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container-fluid">
+					<a class="navbar-brand font-weight-bold" href="/client_home/">
+						<i class="fa fa-ils mr-2" aria-hidden="true"></i>Client
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="/client_home/">Home
+								</a>
+							</li>
+							<li class="nav-item mx-xl-5 mx-lg-3 my-lg-0 my-3 active">
+								<a class="nav-link" href="/client_req/">Upload Requirements</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="/checkpoints/">CheckPoints</a>
+							</li>
+							<li class="nav-item mx-xl-5 mx-lg-3 my-lg-0 my-3">
+								<a class="nav-link" href="/client_logout/">Logging Out</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<!-- //navigation -->
+	</header>
+
+
+	<div class="center-container">
+		<div class="main">
+			<h1 class="w3layouts_head" style="font-size: 1.8em; margin-top:-60px;">Prosthetics Requirement Form</h1>
+				<div class="w3layouts_main_grid">
+<form action="/client_req/" method="post" class="w3_form_post">
+    {% csrf_token %}
+    <div class="w3_agileits_main_grid w3l_main_grid">
+        <span class="agileits_grid">
+            <label>Client Id</label>
+            <input type="text" name="client_id" value="{{d}}" required="" disabled autocomplete="off">
+        </span>
+    </div>
+
+    <div class="w3_agileits_main_grid w3l_main_grid">
+        <span class="agileits_grid">
+            <label>Name</label>
+            <input type="text" name="name" value="{{e}}" required="" disabled autocomplete="off">
+        </span>
+    </div>
+
+    <div class="w3_agileits_main_grid w3l_main_grid">
+        <span class="agileits_grid">
+            <label>Age</label>
+            <input type="text" name="age" placeholder="Age" required="" maxlength="3" autocomplete="off">
+        </span>
+    </div>
+
+    <div class="content-w3ls">
+        <div class="form-w3ls">
+            <div class="content-wthree2">
+                <div class="grid-w3layouts1">
+                    <div class="w3-agile1">
+                        <label>Gender</label>
+                        <ul>
+                            <li>
+                                <input type="radio" id="male-option" name="gender" value="Male">
+                                <label for="male-option">Male</label>
+                                <div class="check"></div>
+                            </li>
+                            <li>
+                                <input type="radio" id="female-option" name="gender" value="Female">
+                                <label for="female-option">Female</label>
+                                <div class="check"><div class="inside"></div></div>
+                            </li>
+                            <li>
+                                <input type="radio" id="transgender-option" name="gender" value="Transgender">
+                                <label for="transgender-option">Transgender</label>
+                                <div class="check"><div class="inside"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="w3_agileits_main_grid w3l_main_grid" >
+            <span class="agileits_grid">
+                <label>Prosthetics</label>
+                <select name="prosthetics_type" style="width:313px;">
+                    <option value="" disabled selected>Select Prosthetics</option>
+                    <option value="Meniscus Replacement (Leg)">Meniscus Replacement (Leg)</option>
+                    <option value="Cartilage Repair (Leg)">Cartilage Repair (Leg)</option>
+                    <option value="Ankle Ligament Reconstruction (Leg)">Ankle Ligament Reconstruction (Leg)</option>
+                    <option value="Bionic Feet with Sensors (Leg)">Bionic Feet with Sensors (Leg)</option>
+                    <option value="Fingertip Prostheses (Hand)">Fingertip Prostheses (Hand)</option>
+                    <option value="Tendon & Ligament Repair (Hand)">Tendon & Ligament Repair (Hand)</option>
+                    <option value="Sensory Feedback (Hand)">Sensory Feedback (Hand)</option>
+                    <option value="Artificial Skin (Hand)">Artificial Skin (Hand)</option>
+                </select>
+            </span>
+        </div>
+
+        <div class="w3_agileits_main_grid w3l_main_grid">
+            <span class="agileits_grid">
+                <label>Prosthetics Height (cm)</label>
+                <input type="text" name="height" placeholder="Height" required="" maxlength="3" autocomplete="off">
+            </span>
+        </div>
+
+        <div class="w3_agileits_main_grid w3l_main_grid">
+            <span class="agileits_grid">
+                <label>Prosthetics Width (cm)</label>
+                <input type="text" name="width" placeholder="Width" required="" maxlength="3" autocomplete="off">
+            </span>
+        </div>
+
+
+		<div class="w3_agileits_main_grid w3l_main_grid" >
+    <span class="agileits_grid">
+        <label>Medical Condition</label>
+        <select name="medical_condition" style="width:313px;">
+			<option value="" disabled selected>Select Medical Condition</option>
+            <option value="Amputation">Amputation</option>
+            <option value="Congenital Limb Deficiency">Congenital Limb Deficiency</option>
+            <option value="Traumatic Injury">Traumatic Injury</option>
+        </select>
+    </span>
+</div>
+
+        <div class="clear"></div>
+    </div>
+    <div class="w3_main_grid">
+        <div class="w3_main_grid_right">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+</form>
+
+			</div>
+		<!-- Calendar -->
+			<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+					<script>
+						$(function() {
+							$( "#datepicker" ).datepicker();
+						});
+					</script>
+		<!-- //Calendar -->
+
+		</div>
+	</div>
+</body>
+</html>

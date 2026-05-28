@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<base href="\static\integratehub\integratehub_home\assets\">
+    <title>Alleviating A Medical Category Bootstrap responsive Web Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Alleviating Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+	<link href="css/minimal-slider.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+    <!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet"><!-- //online-fonts -->
+
+
+</head>
+<body style="background-image: url({% static 'images/4.jpg' %}); background-repeat:no-repeat;">
+
+<script>
+	{% for msg in messages %}
+		alert('{{ msg }}');
+	{% endfor %}
+</script>
+<header style="margin-top:-100px;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-gradient-secondary">
+                <h1>
+                    <a class="navbar-brand text-white" href="/IH_home/">
+                       Integrate Hub
+                    </a>
+                </h1>
+                <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto text-center">
+                        <li class="nav-item  mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="/IH_home/">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  active  mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="/client_record/">Specification Spectrum</a>
+                        </li>
+
+                        <li class="nav-item mr-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="/integration/">Integration Nexus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/IH_Report/">IH Report</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="/IH_logout/">Logging Out</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+<style>
+    td:hover{
+        background-color:#1B737D;
+        color:white;
+    }
+
+</style>
+
+
+<center><h1 style="color:white;margin-left:50px; margin-top:100px;">P</h1></center>
+
+<center><h1 style="color:white;margin-left:50px; margin-top:100px; font-weight:1;">SPECIFICATION SPECTRUM</h1></center>
+<div class="table-responsive" style="margin-left:250px; margin-top:60px;max-height:300px; overflow:auto; width:70%;">
+            <table class="table custom-table">
+                <thead style="background-color:#FFAB67;">
+                    <tr>
+                      <th  STYLE="text-align:center;color:black;">CLIENT ID</th>
+                      <th  STYLE="text-align:center;color:black;">NAME</th>
+                      <th STYLE="text-align:center;color:black;">GENDER</th>
+                      <th  STYLE="text-align:center;color:black;">AGE</th>
+                      <th  STYLE="text-align:center;color:black;">HEIGHT</th>
+                      <th  STYLE="text-align:center;color:black;">WIDTH</th>
+                      <th  STYLE="text-align:center;color:black;">MEDICAL CONDITION</th>
+                      <th  STYLE="text-align:center;color:black;">PROSTHETICS TYPE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for i in data %}
+                    <tr STYLE="text-align:center; background-color:white;">
+
+                        <td style="color:black;">{{i.c_id}}</td>
+                        <td style="color:black;">{{i.name}}</td>
+                        <td style="color:black;">{{i.gender}}</td>
+                        <td style="color:black;">{{i.age}}</td>
+                        <td style="color:black;">{{i.height}}</td>
+                        <td style="color:black;">{{i.width}}</td>
+                        <td style="color:black;">{{i.medical_condition}}</td>
+                        <td style="color:black;">{{i.prosthetics_type}}</td>
+
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+Application,Material_Composition,Age_of_Application_years,Usage_Frequency_times_day,Physical_Activity_Level,Impact_Resistance,Wear_Resistance,Corrosion_Resistance,Temperature_Resistance,Integrity,Weight,Characteristics,Integrity_Level
+Meniscus Replacement (Leg),Titanium Alloy,5,2,3,8,7,8,9,8,"[0.2, 0.2, 0.2 ,0.2]","[8, 7, 8, 9]",6.41
+Cartilage Repair (Leg),Hyaluronic Acid,3,1,2,7,6,7,8,7,"[0.2, 0.2, 0.2 ,0.2]","[7, 6, 7, 8]",5.6
+Ankle Ligament Reconstruction (Leg),Synthetic Fiber,4,3,5,8,7,8,9,8,"[0.2, 0.2, 0.2 ,0.2]","[8, 7, 8, 9]",6.48
+Bionic Feet with Sensors (Leg),Carbon Fiber,2,4,7,9,8,9,9,9,"[0.2, 0.2, 0.2 ,0.2]","[9, 8, 9, 9]",7.35
+Fingertip Prostheses (Hand),Silicone Rubber,1,2,4,6,5,6,7,6,"[0.2, 0.2, 0.2 ,0.2]","[6, 5, 6, 7]",4.88
+Tendon & Ligament Repair (Hand),Polyethylene,3,2,3,7,6,7,8,7,"[0.2, 0.2, 0.2 ,0.2]","[7, 6, 7, 8]",5.66
+Sensory Feedback (Hand,Conductive Polymer,2,3,6,7,7,8,8,7,"[0.2, 0.2, 0.2 ,0.2]","[7, 7, 8, 8]",6.31
+Artificial Skin (Hand),Collagen Matrix,1,1,2,6,5,6,7,6,"[0.2, 0.2, 0.2 ,0.2]","[6, 5, 6, 7]",4.87
